@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body {
+      background-color: #444;
+    }
+
+    h1,
+    h2,
+    p,
+    ul {
+      padding: 0px;
+      margin: 0px;
+      color: white;
+      list-style: none;
+      font-family: arial;
+    }
+
+    #business-card {
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      margin: 100px;
+      box-shadow: 0px 0px 10px 10px #f2f2f2;
+      border-color: 1px solid red;
+    }
+
+    #business-card .name {
+      width: 150px;
+      height: 100px;
+      float: left;
+      margin-top: 45px;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 10px;
+      border-right: 2px solid white;
+      text-align: end;
+    }
+
+    #business-card .info {
+      margin-left: 185px;
+      padding-top: 50px;
+    }
+
+    #business-card .name h1 {
+      color: white;
+      font-size: 28px;
+    }
+
+    #business-card .name h2 {
+      color: #ac7339;
+      font-size: 22px;
+    }
+
+    #business-card .name small {
+      color: #adad85;
+      font-size: 12px;
+      font-family: arial;
+    }
+
+    #business-card .info li {
+      color: #adad85;
+      font-size: 12px;
+    }
+
+    li:first-child::before {
+      content: "\01F57F";
+      color: #ac7339;
+      font-size: 15px;
+      padding-right: 5px;
+    }
+
+    li:nth-child(2):before {
+      content: "@";
+      color: #ac7339;
+      font-size: 15px;
+      padding-right: 7px;
+    }
+
+    li:last-child:before {
+      content: "\2B57";
+      color: #ac7339;
+      font-size: 15px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>LASTNAME</h2>
+      <small>web designer / developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City
+        State, Province, Country</p>
+      <ul>
+        <li>+00 22 333444</li>
+
+        <li>email@somemail.example</li>
+
+        <li>www.exampledomain.example</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+
+</html>
