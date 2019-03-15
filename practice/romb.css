@@ -1,0 +1,95 @@
+body {
+  background-color: #ffd9b3;
+}
+
+#preloader {
+  width: 1px;
+  height: 1px;
+  border: 1px solid blue;
+  margin-left: 50vw;
+  margin-top: 50vh;
+}
+
+#preloader figure {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  transform: translateX(-60%) translateY(-50%) rotate(45deg);
+  box-shadow: 0 0 50px 10px #ff9933;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#preloader figure img {
+  width: 470px;
+  height: 470px;
+  transform: scale(1.5)rotate(-51deg) translateX(6px) translateY(-41px);
+  transition: 1.5s;
+  animation: spin 5s 3;
+}
+
+@keyframes spin {
+  from {
+    width: 470px;
+    height: 470px;
+    transform: scale(1.5)rotate(51deg) translateX(6px) translateY(-41px);
+    transition: 1.5s;
+  }
+
+  to {
+    width: 470px;
+    height: 470px;
+    transform: scale(1.5)rotate(-51deg) translateX(6px) translateY(-41px);
+    transition: 1.5s;
+  }
+}
+
+#preloader figure img:hover {
+  transform: rotate(-30deg) scale(2);
+  filter: blur(2px);
+}
+
+#preloader .text {
+  position: absolute;
+  top: 20%;
+  color: #ffbf80;
+  transform: rotate(-48deg) translateX(3px) translateY(-7px);
+  animation: text 5s 3;
+}
+
+@keyframes text {
+  from {
+    position: absolute;
+    top: 20%;
+    color: #ffbf80;
+    transform: scale(2) rotate(48deg) translateX(3px) translateY(-7px);
+  }
+
+  to {
+    position: absolute;
+    top: 20%;
+    color: #ffbf80;
+    transform: scale(1) rotate(-48deg) translateX(3px) translateY(-7px);
+  }
+}
+
+#preloader .text h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: cursive;
+  transform: scale(1);
+  transition: .5s;
+}
+
+#preloader .text b {
+  font-size: 20px;
+  margin: -25px;
+  text-align: justify;
+  transform: scale(3);
+  transition: .5s;
+  opacity: 1;
+}
+
+#social {
+  transform: translateY(226px) translateX(121px);
+}
