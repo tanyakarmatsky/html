@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat window</title>
+  <style>
+    #large {
+      width: 336px;
+      height: 500px;
+      background-color: #f2f2f2;
+      border-radius: 10px 20px 10px 10px;
+      position: fixed;
+      right: 20px;
+      bottom: 2px;
+    }
+
+    #send {
+      width: 336px;
+      height: 70px;
+      background-color: #ffe066;
+      text-align: center;
+      border-radius: 10px 20px 0px 0px;
+    }
+
+    #button {
+      position: absolute;
+      top: 320px;
+      left: 20px;
+    }
+
+    #send h3 {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+
+    #button button {
+      width: 295px;
+      height: 40px;
+      background-color: #00ff55;
+      border-radius: 5px 5px 5px 5px;
+      color: white;
+      font-family: arial;
+      font-size: 15px;
+    }
+
+    #text textarea {
+      width: 292px;
+      height: 70px;
+      border-radius: 5px 5px 5px 5px;
+      position: absolute;
+      top: 170px;
+      left: 20px;
+    }
+
+    #input input {
+      width: 295px;
+      height: 30px;
+      border-radius: 5px 5px 5px 5px;
+      position: absolute;
+      top: 265px;
+      left: 20px;
+    }
+
+    #p {
+      width: 291px;
+      height: 70px;
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      font-family: arial;
+      font-size: 15px;
+    }
+
+    #large .close {
+      margin: 5px;
+      position: absolute;
+      right: 335px;
+      top: -5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="large">
+
+    <div>
+      <a href=""><img class="close" src="images/icon.png" alt=""></a>
+    </div>
+    <form action="">
+      <div id="send">
+        <h3>Отправьте нам сообщение</h3>
+      </div>
+      <div id="p">
+        <p>Оставьте свое сообщение в этой форме, мы получим его на e-mail и обязательно ответим!  </p>
+      </div>
+      <div id="text"><textarea placeholder="Message"></textarea></div>
+      <div id="input"><input placeholder="E-mail"></div>
+      <div id="button"><button>Отправить</button></div>
+      <a href=""></a>
+    </form>
+  </div>
+</body>
+</html>
