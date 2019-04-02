@@ -1,0 +1,109 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #e0ebeb;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background-color: #ccccff;
+  opacity: 0.5;
+height: 5em;
+  padding: 0;
+}
+header a:first-child img{
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+
+
+header a:nth-child(2),
+header a:nth-child(3),
+header a:nth-child(4),
+header a:nth-child(5),
+header a:nth-child(6){
+  text-decoration: none;
+  float: left;
+  padding: 1.5em 1em;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+div{
+  width: 150px;
+  height: 150px;
+}
+
+#one{
+  position: relative;
+  right: -10em;
+  top: 1px;
+  width: 300px;
+  height: 300px;
+}
+#two{
+  background-color: #748D4B;
+  margin-top: -170px;
+  margin-left: 30px;
+}
+#three{
+  margin-left: 28.7em;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+}
+#four{
+  background-color: #EBCF56;
+  margin-left: 20em;
+  margin-top: -10.9em;
+}
+#five{
+  background-color: #CCC843;
+  margin-left: 47.4em;
+  margin-top: -20.2em;
+}
+#six{
+  margin-left: 56.7em;
+  margin-top: -18.8em;
+  width: 300px;
+  height: 300px;
+}
+#seven{
+  background-color: #D5DDC9;
+  margin-left: 75.3em;
+  margin-top: -9.4em;
+}
+
+ul li{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#two p,
+#four p,
+#five p{
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 2em;
+  opacity: 0.5;
+}
+.button{
+  margin-top: -4em;
+  position: absolute;
+  right: 1em;
+  background-color: #CAC842;
+  border-radius: 20px 20px 20px 20px;
+  width: 12em;
+  height: 3em;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+.btn{
+  margin-right: 8.5em;
+}
